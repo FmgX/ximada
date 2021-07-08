@@ -7,7 +7,7 @@
 <title>
     使用onedrive作为图床 | Gridea
 </title>
-<link rel="shortcut icon" href="https://fongsera.vercel.app/favicon.ico?v=1625712743773">
+<link rel="shortcut icon" href="https://fongsera.vercel.app/favicon.ico?v=1625712860866">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -28,7 +28,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://fongsera.vercel.app">
-                <img class="avatar" src="https://fongsera.vercel.app/images/avatar.png?v=1625712743773" alt="">
+                <img class="avatar" src="https://fongsera.vercel.app/images/avatar.png?v=1625712860866" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -107,8 +107,8 @@
                         </div>
                         
                                 <div class="post-content">
-                                    <p>##前言<br>
-<img src="https://sn3301files.storage.live.com/y4mn_3LEVidsaWo2B2boOVlCNS_4PxwwhbrB4VCsYx0TiAcvJpdDwFppUaz9g6gJkif7DzmUaZvCOjIKkhmqrWZlE9s1EitA_YDvY6jdo29yZckg-upYDdJxXyjre0lrcttfSoReG0DyC4saJE6yOwmjp4liQKpaSf7SHkM5ttQptKgmaAGJS1dzF0lCJKbD6W_?width=400&amp;height=181&amp;cropmode=none" alt="" loading="lazy"><br>
+                                    <h1 id="前言">前言</h1>
+<p><img src="https://sn3301files.storage.live.com/y4mn_3LEVidsaWo2B2boOVlCNS_4PxwwhbrB4VCsYx0TiAcvJpdDwFppUaz9g6gJkif7DzmUaZvCOjIKkhmqrWZlE9s1EitA_YDvY6jdo29yZckg-upYDdJxXyjre0lrcttfSoReG0DyC4saJE6yOwmjp4liQKpaSf7SHkM5ttQptKgmaAGJS1dzF0lCJKbD6W_?width=400&amp;height=181&amp;cropmode=none" alt="" loading="lazy"><br>
 因为要做站所以要使用图床，接触来接触去的都是他人开发好的图床服务。而且又听说网易和新浪的图床不让用了，所以要找一个稳定，有大公司背景，速度可以，便于管理的图床。 巨硬yse。</p>
 
                                 </div>
@@ -123,32 +123,42 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://fongsera.vercel.app/images/avatar.png?v=1625712743773)">
-        </div>
-        <h1 class="id_card-title">
-            Gridea
-        </h1>
-        <h2 class="id_card-description">
-            温故而知新
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 
