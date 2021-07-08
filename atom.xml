@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fongsera.vercel.app</id>
     <title>Gridea</title>
-    <updated>2021-07-08T02:54:23.076Z</updated>
+    <updated>2021-07-08T03:04:09.982Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fongsera.vercel.app"/>
     <link rel="self" href="https://fongsera.vercel.app/atom.xml"/>
@@ -28,6 +28,17 @@
         <content type="html"><![CDATA[<h1 id="前言">前言</h1>
 <p><img src="https://sn3301files.storage.live.com/y4mn_3LEVidsaWo2B2boOVlCNS_4PxwwhbrB4VCsYx0TiAcvJpdDwFppUaz9g6gJkif7DzmUaZvCOjIKkhmqrWZlE9s1EitA_YDvY6jdo29yZckg-upYDdJxXyjre0lrcttfSoReG0DyC4saJE6yOwmjp4liQKpaSf7SHkM5ttQptKgmaAGJS1dzF0lCJKbD6W_?width=400&amp;height=181&amp;cropmode=none" alt="" loading="lazy"><br>
 因为要做站所以要使用图床，接触来接触去的都是他人开发好的图床服务。而且又听说网易和新浪的图床不让用了，所以要找一个稳定，有大公司背景，速度可以，便于管理的图床。 巨硬yse。</p>
+<h1 id="开始">开始</h1>
+<p>注册登录在网页版打开OneDrive，上传图片并右击图片<br>
+<img src="https://sn3301files.storage.live.com/y4mRDQqeydvhML9GxVE16EAkfPlAQr-6TaJJBbon2LWhxCX9x4gVAmzD6YphLOCwhXwXKgwyxCGzwMqGtfoe6LAlO2LWXFrTBM78yQ5-oNunBS84eDDt-lH7Abnx52TCUPyqGo711HWZLTRcnYVMaIjZBZ1bMsJ9S1e3XoRk3rPz1DOvlgTSTngjsnMOHFEwLAF?width=655&amp;height=416&amp;cropmode=none" alt="" loading="lazy"><br>
+出现以下界面点击嵌入<br>
+<img src="https://sn3301files.storage.live.com/y4mOOE1HOuokOmeJXmRp79uM8W0y_58nEB4L96M5RuuWBPr7G6gjvQYUprYdiYxP5OjPbCdZyE8EcR7tzi-s6qRs30lZz-Amp9IzOJeAMXWHYMgzRxG9dGEZcBZxSTdp0cN_wD2eFZPgKimW01wPTPlWrsU332EWsn1DABUlpzYvOtBS9vGfch_XzggzQ7YuPn_?width=228&amp;height=641&amp;cropmode=none" alt="" loading="lazy"><br>
+点击生成<br>
+<img src="https://sn3301files.storage.live.com/y4mI0WKNDs5j0VRU3QIrkg4v84BkPV9SCsob8HgLnwlWO9-MGBBM3zNnCekRUKqOVy0PclRvA_QgjPASJSA5lTBBjSq2GIad4BSvu4Cm6BmhU1f6Riz1KnTMpQCC7UsgMjTXbML65L1MPQ9HxMy1Mj6iqmbKKZ3Y_5ABNVQ49y7CQ8gMV3faZG8_4slLvdDKofB?width=423&amp;height=709&amp;cropmode=none" alt="" loading="lazy"><br>
+复制你的URL到你的文章中就可以了<br>
+<img src="https://sn3301files.storage.live.com/y4mAme4YdiOc8QXGkU4ooGciKfNUfOpbJyOQGsKZwSP2iJqyWWRXB7Yk2FiyS7hsxDKztx6ZdZvjsJGccRwtI5EZIu4m9L_VABnl2lvwFrMlZPwZS9EUnbjqe6GGFD4RbUDuJF5oyk1xLhMFMTPCo2R2buVqcWarIEdTNYajvtAHBywfiV9sNsA2-xZFrGrP64H?width=423&amp;height=916&amp;cropmode=none" alt="" loading="lazy"></p>
+<hr>
+<p><mark>网页版的onedrive可能需要科学上网</mark></p>
 ]]></content>
     </entry>
 </feed>
