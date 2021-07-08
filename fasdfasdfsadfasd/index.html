@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    使用onedrive作为图床 | 风颂伊
+</title>
+<link rel="shortcut icon" href="https://fongsera.vercel.app/favicon.ico?v=1625713704257">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://fongsera.vercel.app/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://fongsera.vercel.app/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+        
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://fongsera.vercel.app">
+                <img class="avatar" src="https://fongsera.vercel.app/images/avatar.png?v=1625713704257" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    风颂伊
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            使用onedrive作为图床
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2021-07-07</time>
+                            
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://sn3301files.storage.live.com/y4mn_3LEVidsaWo2B2boOVlCNS_4PxwwhbrB4VCsYx0TiAcvJpdDwFppUaz9g6gJkif7DzmUaZvCOjIKkhmqrWZlE9s1EitA_YDvY6jdo29yZckg-upYDdJxXyjre0lrcttfSoReG0DyC4saJE6yOwmjp4liQKpaSf7SHkM5ttQptKgmaAGJS1dzF0lCJKbD6W_?width=400&amp;height=181&amp;cropmode=none')"></div>
+                            
+                                <div class="post-content">
+                                    <h1 id="前言">前言</h1>
+<p><img src="https://sn3301files.storage.live.com/y4mn_3LEVidsaWo2B2boOVlCNS_4PxwwhbrB4VCsYx0TiAcvJpdDwFppUaz9g6gJkif7DzmUaZvCOjIKkhmqrWZlE9s1EitA_YDvY6jdo29yZckg-upYDdJxXyjre0lrcttfSoReG0DyC4saJE6yOwmjp4liQKpaSf7SHkM5ttQptKgmaAGJS1dzF0lCJKbD6W_?width=400&amp;height=181&amp;cropmode=none" alt="" loading="lazy"><br>
+因为要做站所以要使用图床，接触来接触去的都是他人开发好的图床服务。而且又听说网易和新浪的图床不让用了，所以要找一个稳定，有大公司背景，速度可以，便于管理的图床。 巨硬yse。</p>
+<h1 id="开始">开始</h1>
+<p>注册登录在网页版打开OneDrive，上传图片并右击图片<br>
+<img src="https://sn3301files.storage.live.com/y4mRDQqeydvhML9GxVE16EAkfPlAQr-6TaJJBbon2LWhxCX9x4gVAmzD6YphLOCwhXwXKgwyxCGzwMqGtfoe6LAlO2LWXFrTBM78yQ5-oNunBS84eDDt-lH7Abnx52TCUPyqGo711HWZLTRcnYVMaIjZBZ1bMsJ9S1e3XoRk3rPz1DOvlgTSTngjsnMOHFEwLAF?width=655&amp;height=416&amp;cropmode=none" alt="" loading="lazy"><br>
+出现以下界面点击嵌入<br>
+<img src="https://sn3301files.storage.live.com/y4mOOE1HOuokOmeJXmRp79uM8W0y_58nEB4L96M5RuuWBPr7G6gjvQYUprYdiYxP5OjPbCdZyE8EcR7tzi-s6qRs30lZz-Amp9IzOJeAMXWHYMgzRxG9dGEZcBZxSTdp0cN_wD2eFZPgKimW01wPTPlWrsU332EWsn1DABUlpzYvOtBS9vGfch_XzggzQ7YuPn_?width=228&amp;height=641&amp;cropmode=none" alt="" loading="lazy"><br>
+点击生成<br>
+<img src="https://sn3301files.storage.live.com/y4mI0WKNDs5j0VRU3QIrkg4v84BkPV9SCsob8HgLnwlWO9-MGBBM3zNnCekRUKqOVy0PclRvA_QgjPASJSA5lTBBjSq2GIad4BSvu4Cm6BmhU1f6Riz1KnTMpQCC7UsgMjTXbML65L1MPQ9HxMy1Mj6iqmbKKZ3Y_5ABNVQ49y7CQ8gMV3faZG8_4slLvdDKofB?width=423&amp;height=709&amp;cropmode=none" alt="" loading="lazy"><br>
+复制你的URL到你的文章中就可以了<br>
+<img src="https://sn3301files.storage.live.com/y4mAme4YdiOc8QXGkU4ooGciKfNUfOpbJyOQGsKZwSP2iJqyWWRXB7Yk2FiyS7hsxDKztx6ZdZvjsJGccRwtI5EZIu4m9L_VABnl2lvwFrMlZPwZS9EUnbjqe6GGFD4RbUDuJF5oyk1xLhMFMTPCo2R2buVqcWarIEdTNYajvtAHBywfiV9sNsA2-xZFrGrP64H?width=423&amp;height=916&amp;cropmode=none" alt="" loading="lazy"></p>
+<hr>
+<p><mark>网页版的onedrive可能需要科学上网</mark></p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E5%BC%80%E5%A7%8B">开始</a></li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://fongsera.vercel.app/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
+
+</html>
